@@ -4,6 +4,7 @@ Library     AppiumLibrary
 
 ***Test Cases***
 Show My Balance
+    Sleep   3m
     Open Application    http://127.0.0.1:4723/wd/hub
     ...                 automationName=UiAutomator2
     ...                 platformName=Android
