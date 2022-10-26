@@ -33,10 +33,11 @@ RUN   chmod +x /runner.sh
 COPY ./emulador.sh /
 RUN   chmod +x /emulador.sh
 
+
 RUN mkdir /results
 
 ENV PATH=/bin:/usr/bin:/data:$PATH
 
 # docker run --rm -v D:\Codes\python\docker-images\test\robot:/data -e WORK_DIRECTORY=portal_1 041995455634/robotf robot -d ../results .
-RUN  sudo ./emulador.sh
+
 ENTRYPOINT [ "/runner.sh" ]
