@@ -5,7 +5,7 @@ Library     SeleniumLibrary
 ***Test Cases***
 Show My Balance
     Log to console  Iniciando....
-    Sleep   1m
+    #Sleep   1m
     # Open Application    http://127.0.0.1:4723/wd/hub
     # ...                 automationName=UiAutomator2
     # ...                 platformName=Android
@@ -25,5 +25,5 @@ Show My Balance
     # Capture Page Screenshot
     # Close Application
 
-    Open Browser    http://localhost:6080/    chrome
+    Open Browser    https://www.google.com.br/    chrome
     Close Browser
